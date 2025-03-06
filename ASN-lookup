@@ -1,0 +1,26 @@
+ASN Lookup API
+https://asnlookup.com/
+
+To get ASN data you need, make a GET call to the following url :
+https://asn-lookup.p.rapidapi.com/api
+
+Only one query parameter is allowed in an API call.
+
+HTTP response is returned in JSON format.
+
+
+QUERY PARAMETERS
+Field   	Type 	    Description
+asn 	    String 	   AS number (e.g: AS32934 or 32934)
+orgname 	String 	   Organization name (e.g: Facebook)
+cidr 	    String   	IPv4/IPv6 CIDR (e.g: 66.220.144.0/20 or 2620:0:1c00::/40)
+ip 	      String   	IPv4/IPv6 address (e.g: 66.220.144.0 or 2400:6180:0:d1::79b:1) 
+
+
+example
+
+# Here is a curl example
+curl -i -s -k -X 'GET' 'https://asn-lookup.p.rapidapi.com/api?asn=AS13414' \
+-H 'Host: asn-lookup.p.rapidapi.com' \
+-H 'X-Rapidapi-Host: asn-lookup.p.rapidapi.com' \
+-H 'X-Rapidapi-Key: 1234184324abc1d88bfe2f60b28bp16e349jsncc0a5f92df8c'

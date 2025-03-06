@@ -1,3 +1,4 @@
+whois -h whois.radb.net '!gAS32934' | tr ' ' '\n' | grep -E '([0-9]{1,3}\.){3}[0-9]{1,3}(/[0-9]{1,2})?'
 #Facebook - https://www.facebook.com/peering/
 #Instagram
 AS32934
